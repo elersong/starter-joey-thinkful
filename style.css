@@ -1,14 +1,20 @@
+:root {
+    --whitish: rgb(255, 249, 240);
+    --bluish: #23215e;
+}
+
 header {
-    background-color: #0B1C51;
+    background-color: var(--bluish);
     display: flex;
     flex-direction: column; 
-    color: white; 
+    color: var(--whitish); 
+    min-width: 325px;
 }
 h1 {
     text-align: center;
     font-size: 52px; 
     margin: 0; 
-    padding: 20px   
+    padding-top: 10px;
 }
 
 ul {
@@ -20,19 +26,24 @@ ul {
 
 ul li {
     list-style-type: none;
-    margin: 0 5px; 
+    margin: 0 12px; 
+}
+
+body {
+    background-color: var(--whitish);
 }
 
 #menu li a{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    color: white; 
+    color: var(--whitish); 
 
 }
 
-@media all and (min-width: 400px) {
+@media all and (min-width: 750px) {
     h1 {
         font-size: 48px; 
+        padding: 20px 30px;
     }
     header {
         flex-direction: row; 
